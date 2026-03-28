@@ -1,0 +1,13 @@
+package com.tripsdwh0.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class TripsDwh0Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TripsDwh0Application.class, args);
+	}
+
+}
