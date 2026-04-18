@@ -2,12 +2,12 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>AppTrip</title>
+<title>TripApp</title>
 </head>
 <body>
 <h1>Categoria de Trips El Salvador</h1>
 <ol>
-<li th:each="temtrip : ${listadoTrip}" th:text=${temtrip}><li>
+  <li th:each="tempTrip : ${listadoTrip}" th:text="${tempTrip}"></li>
 </ol>
 </body>
 </html>

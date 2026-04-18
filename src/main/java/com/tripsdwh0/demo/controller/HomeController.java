@@ -18,7 +18,8 @@ public class HomeController {
 		lista.add("En las playas");
 		model.addAttribute("listadoTrip", lista);
 		
-		return "listado2";
+		return "listado";
 	}
-
+	
 }
+	
