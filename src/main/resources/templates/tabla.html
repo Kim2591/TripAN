@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Trips</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trips en El Salvador</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Fecha publicación</th>
+                <th>Costo</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="trip : ${trips}">
+                <td th:text="${trip.id}"></td>
+                <td th:text="${trip.nomTrip}"></td>
+                <td th:text="${trip.fecha}"></td>
+                <td th:text="${trip.costo}"></td>
+                <td th:text="${trip.descripcion}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
