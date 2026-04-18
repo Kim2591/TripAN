@@ -14,6 +14,12 @@ public class Trip {
 	private boolean activo;
 	private Date fecha;
 	private Integer idCategoria;
+	private int Destacado;
+	
+	@Override
+	public String toString() {
+	    return "Trip [id=" + id + ", nombre=" + nomTrip + ", descripcion=" + descripcion + ", fecha=" + fecha + ", costo=" + costo + "]";
+	}
 	
 	public Integer getId() {
 		return id;
@@ -75,6 +81,11 @@ public class Trip {
 	public void setIdCategoria(Integer idCategoria) {
 		this.idCategoria = idCategoria;
 	}
+
+	public int getDestacado() {
+		return Destacado;
+	}
+
 	
 	
 	
