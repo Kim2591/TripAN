@@ -5,9 +5,10 @@
 <title>TripApp</title>
 </head>
 <body>
-<h1>Categoria de Trips El Salvador</h1>
+<h1>Trips en El Salvador</h1>
 <ol>
-  <li th:each="tempTrip : ${listadoTrip}" th:text="${tempTrip}"></li>
+<li th:each="tempTrip : ${listadoTrip}" th:text="${tempTrip}"></li>
 </ol>
+
 </body>
 </html>

@@ -18,7 +18,8 @@ public class Trip {
 	
 	@Override
 	public String toString() {
-	    return "Trip [id=" + id + ", nombre=" + nomTrip + ", descripcion=" + descripcion + ", fecha=" + fecha + ", costo=" + costo + "]";
+		return "Trip [id=" + id + ", nombre=" + nomTrip + ", descripcion=" + descripcion + ", fecha=" + fecha 
+			+ ", costo=" + costo + "]";
 	}
 	
 	public Integer getId() {
@@ -85,6 +86,13 @@ public class Trip {
 	public int getDestacado() {
 		return Destacado;
 	}
+
+	public void setDestacado(int destacado) {
+		Destacado = destacado;
+	}
+
+	
+	
 
 	
 	
